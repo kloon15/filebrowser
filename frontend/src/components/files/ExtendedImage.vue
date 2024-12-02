@@ -14,7 +14,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import throttle from "lodash/throttle";
+import { throttle } from "lodash-es";
 import UTIF from "utif";
 import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
