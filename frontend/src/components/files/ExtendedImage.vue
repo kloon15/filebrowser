@@ -20,9 +20,9 @@ import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
 interface IProps {
   src: string;
-  moveDisabledTime: number;
-  classList: any[];
-  zoomStep: number;
+  moveDisabledTime?: number;
+  classList?: any[];
+  zoomStep?: number;
 }
 
 const props = withDefaults(defineProps<IProps>(), {
