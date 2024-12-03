@@ -11,9 +11,9 @@
     "dev": "vite dev",
     "build": "pnpm run typecheck && vite build",
     "clean": "find ./dist -maxdepth 1 -mindepth 1 ! -name '.gitkeep' -exec rm -r {} +",
-    "typecheck": "vue-tsc -p ./tsconfig.json --noEmit",
-    "lint": "pnpm run typecheck && eslint --ext .vue,.ts src/",
-    "lint:fix": "eslint --ext .vue,.ts --fix src/",
+    "typecheck": "vue-tsc -p ./tsconfig.app.json --noEmit",
+    "lint": "eslint src/",
+    "lint:fix": "eslint --fix src/",
     "format": "prettier --write .",
     "test": "playwright test"
   },
